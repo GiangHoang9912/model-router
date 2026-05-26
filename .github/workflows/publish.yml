@@ -8,6 +8,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: model-router
     permissions:
       id-token: write   # OIDC — không cần token
 
