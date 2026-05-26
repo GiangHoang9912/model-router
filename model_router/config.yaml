@@ -1,0 +1,96 @@
+# Model Router — Default Configuration
+# =====================================
+# Cài đặt: model-router init
+# Xem:     model-router show
+# Sửa:     model-router set <category> <model>
+# URL:     model-router url <url>
+# Reset:   model-router reset
+# Models:  model-router list-models
+
+# Provider info (dùng chung cho mọi route)
+provider:
+  name: custom:9router               # Tên provider trong Hermes config
+  api_url: http://localhost:20128/v1  # API endpoint (9router / OpenRouter / ...)
+
+routing:
+  code: ag/claude-sonnet-4-6
+  research: ds/deepseek-v4-pro
+  creative: ag/gemini-3-flash
+  plan: ag/claude-opus-4-6-thinking
+  review: ag/claude-sonnet-4-6
+  default: ag/claude-opus-4-6-thinking
+
+keywords:
+  code:
+    - fix
+    - bug
+    - sửa
+    - lỗi
+    - implement
+    - code
+    - refactor
+    - debug
+    - build
+    - deploy
+    - function
+    - class
+    - test
+    - compile
+    - error
+    - api
+    - endpoint
+    - database
+    - query
+    - migration
+    - docker
+    - npm
+    - pip
+    - git
+  research:
+    - analyze
+    - research
+    - compare
+    - so sánh
+    - phân tích
+    - nghiên cứu
+    - đánh giá
+    - pros and cons
+    - trade-off
+    - ưu nhược
+    - explain
+    - giải thích
+    - how does
+    - what is
+    - difference
+  creative:
+    - viết
+    - write
+    - content
+    - slogan
+    - thơ
+    - sáng tạo
+    - creative
+    - marketing
+    - bài hát
+    - kịch bản
+    - email
+    - landing page
+  plan:
+    - plan
+    - kế hoạch
+    - architecture
+    - thiết kế
+    - design system
+    - spec
+    - requirement
+    - roadmap
+    - timeline
+    - milestone
+  review:
+    - review
+    - check code
+    - audit
+    - inspect
+    - quality
+    - security
+    - performance

@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+hermes_model_router.egg-info/PKG-INFO
+hermes_model_router.egg-info/SOURCES.txt
+hermes_model_router.egg-info/dependency_links.txt
+hermes_model_router.egg-info/entry_points.txt
+hermes_model_router.egg-info/requires.txt
+hermes_model_router.egg-info/top_level.txt
+model_router/__init__.py
+model_router/cli.py
+model_router/config.yaml
+model_router/router.py
+model_router/skill/SKILL.md

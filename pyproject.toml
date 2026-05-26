@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-model-router"
+version = "1.0.0"
+description = "Auto route Hermes Agent tasks to the best model — code, research, creative, plan, review"
+authors = [{name = "Giang Hoang"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Console",
+]
+
+[project.scripts]
+model-router = "model_router.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["model_router*"]
+
+[tool.setuptools.package-data]
+model_router = ["config.yaml", "skill/SKILL.md", "skill/references/*"]
